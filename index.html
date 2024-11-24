@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="custom.css" rel="stylesheet">
+    <title>Banco del Sol</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar text-bg-dark p-3">
+      <div class="container d-flex align-items-center">
+          <!-- Logo -->
+          <a class="navbar-brand d-flex align-items-center logo-container me-4" href="#">
+              <div class="logo-text">
+                  <span>BANCO</span>
+                  <span>DEL <br></span>
+                  <span>SOL</span>
+              </div>
+              <img src="img/pngwing.com.png" alt="Sol" width="60" height="60" class="d-inline-block align-middle">
+          </a>
+
+          <!-- Botón de menú hamburguesa para pantallas pequeñas -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menú de navegación -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a class="nav-link active" href="index.html">PERSONAS</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="empresas.html">EMPRESAS</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="institucional.html">INSTITUCIONAL</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="homebanking.html">HOME BANKING</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </header>
+
+    <!-- Main-->
+    <main>
+        <!-- Hero  -->
+        <section class="text-center mb-5">
+            <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <!-- Primer carrusel -->
+                    <div class="carousel-item active position-relative">
+                        <img src="img/carrusel1.jpeg" class="d-block w-100" alt="Imagen del carrusel">
+                        <div class="overlay"></div>
+                        <div class="carousel-caption text-start">
+                            <div class="container">
+                                <h1>Disfruta de los Beneficios</h1>
+                                <p>15% de descuento con MODO BDS +</p>
+                                <p><a class="btn btn-lg btn-primary" href="error400.html">Conoce Más</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Segundo carrusel -->
+                    <div class="carousel-item position-relative">
+                        <img src="img/carrusel2.jpg" class="d-block w-100" alt="Imagen del carrusel">
+                        <div class="overlay"></div>
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <h1>Haz crecer tu negocio.</h1>
+                                <p>Descubre herramientas exclusivas para comerciantes.</p>
+                                <p><a class="btn btn-lg btn-primary" href="error400.html">Aprende más</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tercer carrusel -->
+                    <div class="carousel-item position-relative">
+                        <img src="img/carrusel3.jpg" class="d-block w-100" alt="Imagen del carrusel">
+                        <div class="overlay"></div>
+                        <div class="carousel-caption text-end">
+                            <div class="container">
+                                <h1>Con seguridad y confianza.</h1>
+                                <p>Accede a seguros personalizados para tu empresa.</p>
+                                <p><a class="btn btn-lg btn-primary" href="error400.html">Explorar opciones</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <!-- Seccion Tarjetas -->
+        <section class="container">
+            <h2 class="text-center mb-5">Tenemos otros productos que te pueden interesar</h2>
+            <div class="row g-4 mb-5">
+                <!-- Tarjeta de la izquierda -->
+                <div class="col-md-6">
+                    <div class="card h-100 border-dark">
+                        <!-- Imagen ocupa la mitad superior de la tarjeta -->
+                        <div class="card-img-top" style="height: 50%; overflow: hidden;">
+                            <img src="img/travel-5219496_1280.jpg" alt="Travel Img" class="w-100 h-100" style="object-fit: cover;">
+                        </div>
+                        <!-- Contenido ocupa la mitad inferior de la tarjeta -->
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Préstamos personales</h5>
+                            <p class="card-text">Pedí tu préstamo por HomeBanking, la App Banco del Sol o en nuestros Cajeros Automáticos. Luego, validá tu identidad y en las próximas 24 horas hábiles vas a ver el dinero acreditado en tu cuenta.</p>
+                            <a type="button" class="btn btn-outline-primary mt-auto align-self-start" href="error400.html">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjetas de la derecha -->
+        <div class="col-md-6 d-flex flex-column">
+            <div class="row g-4 h-100">
+                <!-- Primera tarjeta: ocupa la mitad superior -->
+                <div class="col-12">
+                    <div class="card h-100 border-dark">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Emprendedores</h5>
+                            <p class="card-text">Si traés tu negocio, comercio o emprendimiento a BBVA te llevás hasta 40.000 Millas BDS.</p>
+                            <a type="button" class="btn btn-outline-primary mt-auto align-self-start" href="error400.html">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Segunda y tercera tarjetas: ocupan la mitad inferior -->
+                <div class="col-md-6">
+                    <div class="card h-100 border-dark">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Jubilados</h5>
+                            <p class="card-text">Cobrar tu jubilación en BDS tiene beneficios. <br>10% de ahorro en comercios adheridos pagando exclusivamente con MODO BNA.</p>
+                            <a type="button" class="btn btn-outline-primary mt-auto align-self-start" href="error400.html">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-dark">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Programa de Referidos</h5>
+                            <p class="card-text">Referí a quien quieras y llevate 12.000 Millas BDS por cada persona que se dé de alta.</p>
+                            <a type="button" class="btn btn-outline-primary mt-auto align-self-start" href="error400.html">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+      <!-- Seccion Imagen y Texto -->
+        <section class="container ">
+          <hr class="featurette-divider mb-5">  
+          <div class="row featurette mb-5">
+            <div class="col-md-7">
+              <h2 class="featurette-heading fw-normal lh-1">¡Comprá, sumá y canjeá!</h2>
+              <ul><p class="lead">Por cada dólar o su equivalente en pesos, vas a sumar 1 Milla BBVA.</p>
+
+                <li><p>Sumás millas con los consumos que hagas con tus tarjetas de crédito BBVA.</p></li>
+                <li><p>Si sos cliente Premium acumulás 5% extra.</p></li>
+                <li><p>Si sos cliente Premium World acumulás 15% extra.</p></li>
+               </ul>
+            </div>
+            <div class="col-md-5">
+              <img src="img/tarjeta1.jpg" alt="Molino de Viento" class="featurette-image img-fluid mx-auto" width="500" height="500">
+            </div>
+          </div>
+          
+          <hr class="featurette-divider mb-5">
+        
+          <div class="row featurette mb-5">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading fw-normal lh-1">Nos importa la Sostenibilidad.<span class="text-body-secondary"> Nuestro Compromiso</span></h2>
+              <p class="lead"> En BDS trabajamos para un futuro más verde y responsable. Promovemos prácticas financieras que fomentan el respeto por el medio ambiente y apoyan iniciativas de desarrollo sostenible.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <img src="img/sustentable.jpg" alt="Molino de Viento" class="featurette-image img-fluid mx-auto" width="500" height="500">
+            </div>
+          </div>
+        
+          <hr class="featurette-divider">
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer text-bg-dark p-3">
+      <div class="container">
+          <div class="row align-items-center">
+              <!-- Enlaces de contacto y sucursales -->
+              <div class="col-md-4 text-center mb-3 mb-md-0">
+                  <div class="d-flex justify-content-center">
+                      <a href="form.html" class="text-light text-decoration-none mx-2">Contáctenos</a>
+                      <a href="error400.html" class="text-light text-decoration-none mx-2">Sucursales</a>
+                  </div>
+              </div>
+              
+              <!-- Logo del footer -->
+              <div class="col-md-4 text-center mb-3 mb-md-0">
+                  <img src="img/pngwing.com.png" alt="Banco del Sol" width="70">
+              </div>
+              
+              <!-- Redes sociales -->
+              <div class="col-md-4 text-center">
+                  <a href="error400.html"><img src="img/facebook-svgrepo-com.svg" alt="Facebook" width="25" class="me-3"></a>
+                  <a href="error400.html"><img src="img/instagram-svgrepo-com.svg" alt="Instagram" width="25" class="me-3"></a>
+                  <a href="error400.html"><img src="img/linkedin-svgrepo-com.svg" alt="LinkedIn" width="25" class="me-3"></a>
+                  <a href="error400.html"><img src="img/twitter-svgrepo-com.svg" alt="Twitter" width="25"></a>
+              </div>
+          </div>
+          
+          <!-- Copyright -->
+          <div class="text-center mt-3">
+              <p class="mb-0">&copy; 2024 Banco del Sol S.A.</p>
+          </div>
+      </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
